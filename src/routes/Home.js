@@ -14,11 +14,11 @@ function Home() {
     }) //same as getMovies()
   },[])
 
-  const getMovies = async() => {
-    const json = await (await fetch('https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year')).json();
-    setMovieList(json.data.movies);
-    setLoading(false);
-  }
+  // const getMovies = async() => {
+  //   const json = await (await fetch('https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year')).json();
+  //   setMovieList(json.data.movies);
+  //   setLoading(false);
+  // }
 
   return (
     <div>
