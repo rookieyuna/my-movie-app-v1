@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basepath={process.env.PUBLIC_URL}>
       <Switch>
       <Route path="/detail/:movieId">
           <Detail />
@@ -16,5 +16,4 @@ function App() {
     </Router>
   )
 }
-// 24.01.01 Router 설치시 $ npm i react-router-dom@5.3.0
 export default App;
